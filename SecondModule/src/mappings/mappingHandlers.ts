@@ -1,4 +1,4 @@
-import {SubstrateExtrinsic,SubstrateEvent,SubstrateBlock} from "@subql/types";
+import {SubstrateEvent} from "@subql/types";
 import {Account} from "../types";
 import {Balance} from "@polkadot/types/interfaces";
 
