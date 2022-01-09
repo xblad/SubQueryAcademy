@@ -1,10 +1,11 @@
 type Account @entity {
-  id: ID! # this primary key is set as the toAddress
+  id: ID! #this primary key is set as the toAddress
+  toTransfers: [Transfer] @derivedFrom(field:"to")
 }
 
 type Transfer @entity {
-  id: ID!
+  id: ID! #this primary key is the block number + the event id
   amount: BigInt
   blockNumber: BigInt
-  to: Account! # receiving account
+  to: Account! #receiving address
 }
