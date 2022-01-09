@@ -25,7 +25,7 @@ function createSumReward(accountId: string): SumReward {
 }
 
 export async function handleSumReward(event: SubstrateEvent): Promise<void> {
-    await handleStakingRewarded(event);
+    await handleSumRewarded(event);
 }
 
 export async function handleSumRewarded(event: SubstrateEvent): Promise<void> {
